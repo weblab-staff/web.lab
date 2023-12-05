@@ -24,9 +24,9 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 flex h-16 w-full items-center justify-center border-b ${
-        atTop ? "border-transparent" : "border-neutral-900 backdrop-blur-lg"
-      } bg-transparent px-6 transition ease-in-out 2xl:px-0`}
+      className={`fixed top-0 z-10 flex h-16 w-full items-center justify-center border-b ${
+        atTop ? "border-transparent" : "border-neutral-900"
+      } bg-transparent px-6 backdrop-blur-lg transition ease-in-out 2xl:px-0`}
     >
       <div className="flex w-full max-w-7xl items-center gap-3 text-2xl font-semibold">
         <Image className="h-auto w-8" src={logo} alt="web.lab Logo" />

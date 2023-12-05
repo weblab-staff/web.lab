@@ -73,6 +73,17 @@ export default function Hero() {
         <Image src={floating1} alt="image" width={300} />
         <Image src={floating1} alt="image" width={300} />
       </div>
+      <section className="flex h-full w-full flex-col items-center justify-center">
+        <div className="items-left flex w-full max-w-7xl flex-col px-6 2xl:px-0">
+          <h1 className="z-[1] text-7xl font-semibold tracking-tighter">
+            learn web dev.
+            <br />
+            win cash prizes.
+            <br />
+            all in 4 weeks.
+          </h1>
+        </div>
+      </section>
     </main>
   );
 }
