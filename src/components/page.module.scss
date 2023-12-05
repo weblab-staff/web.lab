@@ -29,11 +29,12 @@
     img {
       position: absolute;
     }
+    z-index: 1;
     &:nth-of-type(1) {
       filter: brightness(0.7);
       img {
         &:nth-of-type(1) {
-          left: 90%;
+          left: 80%;
           top: 70%;
         }
         &:nth-of-type(2) {
@@ -73,6 +74,10 @@
         &:nth-of-type(2) {
           left: 40%;
           top: 75%;
+        }
+        &:nth-of-type(3) {
+          left: 10%;
+          top: 40%;
         }
       }
     }
