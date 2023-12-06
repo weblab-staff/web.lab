@@ -12,11 +12,9 @@
     "@codemirror/lang-css": "^6.2.1",
     "@codemirror/lang-javascript": "^6.2.1",
     "@uiw/react-codemirror": "^4.21.21",
-    "gsap": "^3.12.3",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18",
-    "sass": "^1.69.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10",

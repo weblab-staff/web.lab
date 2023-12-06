@@ -80,6 +80,10 @@
   background-color: transparent;
 }
 
+.cm-focused {
+  outline: none !important;
+}
+
 .cm-gutterElement {
   background-color: transparent !important;
   color: #a3a3a3;
@@ -88,4 +92,11 @@
 .cm-gutters {
   background-color: transparent !important;
   border: none !important;
+  backdrop-filter: blur(20px);
+  backdrop-filter: brightness(0);
+}
+
+.cm-content {
+  height: 100%;
+  padding-top: 0 !important;
 }

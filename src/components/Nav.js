@@ -1,8 +1,27 @@
 "use client";
 import { useState, useEffect } from "react";
-import logo from "../../public/logo.svg";
+import logo from "../../public/img/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+
+const navLinks = [
+  {
+    name: "about",
+    href: "/about",
+  },
+  {
+    name: "team",
+    href: "/team",
+  },
+  {
+    name: "faq",
+    href: "/faq",
+  },
+  {
+    name: "winners",
+    href: "/winners",
+  },
+];
 
 export default function Nav() {
   const [atTop, setAtTop] = useState(true);
@@ -33,16 +52,23 @@ export default function Nav() {
         <Link
           href="/"
           draggable="false"
-          className="flex items-center gap-3 text-2xl font-semibold"
+          className="flex items-center gap-2 text-lg font-semibold lg:gap-3 lg:text-2xl"
         >
           <Image
-            className="h-auto w-8 select-none"
+            className="h-auto w-6 select-none lg:w-8"
             draggable="false"
             src={logo}
             alt="web.lab Logo"
           />
           {"{web.lab}"}
         </Link>
+        <ul className="flex w-full items-center justify-end gap-3 text-sm tracking-tight text-white lg:gap-6 lg:text-base">
+          {navLinks.map((link, i) => (
+            <li key={i}>
+              <Link href={link.href}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
