@@ -1,78 +1,35 @@
-"use client";
-import Image from "next/image";
-import { useRef } from "react";
-import gsap from "gsap";
-import floating1 from "../../public/floating_1.jpg";
-import styles from "./page.module.scss";
+import { metadata } from "@/data/metadata";
+import Link from "next/link";
 
 export default function Hero() {
-  const plane1 = useRef(null);
-  const plane2 = useRef(null);
-  const plane3 = useRef(null);
-  let requestAnimationFrameId = null;
-  let xForce = 0;
-  let yForce = 0;
-  const easing = 0.08;
-  const speed = 0.01;
-
-  const manageMouseMove = (e) => {
-    const { movementX, movementY } = e;
-    xForce += movementX * speed;
-    yForce += movementY * speed;
-
-    if (requestAnimationFrameId == null) {
-      requestAnimationFrameId = requestAnimationFrame(animate);
-    }
-  };
-
-  const lerp = (start, target, amount) =>
-    start * (1 - amount) + target * amount;
-
-  const animate = () => {
-    xForce = lerp(xForce, 0, easing);
-    yForce = lerp(yForce, 0, easing);
-    gsap.set(plane1.current, { x: `+=${xForce}`, y: `+=${yForce}` });
-    gsap.set(plane2.current, {
-      x: `+=${xForce * 0.5}`,
-      y: `+=${yForce * 0.5}`,
-    });
-    gsap.set(plane3.current, {
-      x: `+=${xForce * 0.25}`,
-      y: `+=${yForce * 0.25}`,
-    });
-
-    if (Math.abs(xForce) < 0.01) xForce = 0;
-    if (Math.abs(yForce) < 0.01) yForce = 0;
-
-    if (xForce != 0 || yForce != 0) {
-      requestAnimationFrame(animate);
-    } else {
-      cancelAnimationFrame(requestAnimationFrameId);
-      requestAnimationFrameId = null;
-    }
-  };
   return (
-    <main
-      onMouseMove={(e) => {
-        manageMouseMove(e);
-      }}
-      className={styles.main}
-    >
-      <div ref={plane1} className={styles.plane}>
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating1} alt="image" width={300} />
+    <>
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="jumbo absolute -inset-[10px] opacity-50" />
       </div>
-      <div ref={plane2} className={styles.plane}>
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating1} alt="image" width={300} />
+      <div className="flex w-fit flex-col items-center gap-6 whitespace-nowrap lg:items-start">
+        <h1 className="z-[1] text-center text-5xl font-semibold tracking-tighter lg:text-left lg:text-6xl 2xl:text-7xl">
+          learn web dev.
+          <br />
+          win cash prizes.
+          <br />
+          all in 4 weeks.
+        </h1>
+        <div className="flex w-full items-center gap-3">
+          <Link
+            href="https://portal.weblab.is/"
+            className="z-[1] w-full rounded-2xl border border-neutral-700 bg-transparent bg-white px-4 py-2 text-center text-sm tracking-tight text-black shadow-lg transition duration-300 ease-in-out hover:bg-white/75 lg:w-1/3 lg:text-base"
+          >
+            register now
+          </Link>
+          <Link
+            href={metadata.piazza}
+            className="z-[1] w-full rounded-2xl border border-neutral-700 bg-transparent px-4 py-2 text-center text-sm tracking-tight shadow-lg transition duration-300 ease-in-out hover:bg-white/10 lg:w-1/3 lg:text-base"
+          >
+            join piazza
+          </Link>
+        </div>
       </div>
-      <div ref={plane3} className={styles.plane}>
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating1} alt="image" width={300} />
-      </div>
-    </main>
+    </>
   );
 }

@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-css": "^6.2.1",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@uiw/react-codemirror": "^4.21.21",
     "gsap": "^3.12.3",
     "next": "13.5.6",
     "react": "^18",

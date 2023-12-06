@@ -16,6 +16,7 @@
 
 :root {
   text-wrap: balance;
+  color-scheme: dark;
 }
 
 /* God Rays by Tim Wilson */
@@ -72,4 +73,19 @@
   animation: jumbo 60s linear infinite;
   background-attachment: fixed;
   mix-blend-mode: difference;
+}
+
+/* Code Editor */
+.cm-editor {
+  background-color: transparent;
+}
+
+.cm-gutterElement {
+  background-color: transparent !important;
+  color: #a3a3a3;
+}
+
+.cm-gutters {
+  background-color: transparent !important;
+  border: none !important;
 }
