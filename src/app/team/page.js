@@ -14,7 +14,7 @@ export default function Team() {
             <section className="grid w-full grid-cols-4 items-center justify-center gap-4">
               {team.current.map((member, i) => (
                 <div
-                  className="flex flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 [&>div>img]:grayscale [&>div>img]:hover:grayscale-0"
+                  className="flex flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 transition-transform duration-300 ease-in-out hover:-translate-y-2 [&>div>img]:grayscale [&>div>img]:hover:grayscale-0"
                   key={i}
                   style={{ maxWidth: "600px" }}
                 >
