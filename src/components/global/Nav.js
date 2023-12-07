@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import logo from "../../public/img/logo.svg";
+import logo from "../../../public/img/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
   {
-    name: "about",
-    href: "/about",
+    name: "info",
+    href: "/info",
   },
   {
     name: "team",

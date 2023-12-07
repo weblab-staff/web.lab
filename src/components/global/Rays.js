@@ -1,4 +1,4 @@
-export default function Hero({ children }) {
+export default function Rays({ children }) {
   return (
     <>
       <div className="absolute inset-0 z-0 overflow-hidden">
