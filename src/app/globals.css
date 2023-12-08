@@ -4,13 +4,19 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../../public/font/Gilroy-Light.woff") format("woff");
+  src: url("../../public/font/Gilroy-Thin.woff") format("woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../public/font/Gilroy-ExtraLight.woff") format("woff");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../../public/font/Gilroy-Thin.woff") format("woff");
+  src: url("../../public/font/Gilroy-Light.woff") format("woff");
   font-weight: 300;
 }
 
