@@ -13,7 +13,7 @@ export default async function Sponsors() {
       >
         become a sponsor {":)"}
       </Link>
-      <ul className="flex w-fit flex-row items-center justify-center gap-16">
+      <ul className="flex w-fit flex-wrap items-center justify-center gap-4 sm:gap-8 lg:gap-16">
         {sponsors.map((sponsor, k) => {
           return (
             <Link
