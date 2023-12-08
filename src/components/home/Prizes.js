@@ -46,7 +46,7 @@ export default function Prizes() {
       </div>
       <div
         id="prize-container"
-        className={`absolute inset-0 z-[-1] w-full cursor-wand overflow-hidden bg-transparent`}
+        className={`cursor-wand absolute inset-0 z-[-1] w-full overflow-hidden bg-transparent`}
       ></div>
       <Script src="https://kit.fontawesome.com/1ee8f271b9.js" />
     </section>
