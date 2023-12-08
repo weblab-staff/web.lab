@@ -10,13 +10,6 @@ export default function Prizes() {
     starTrail("prize-container");
   }, []);
 
-  const colors = {
-    1: "from-[#C5AB50] via-[#AC933E] to-[#FBF8AE]",
-    2: "from-[#B4B9BE] via-[#716F71] to-[#A8A9AD]",
-    3: "from-[#A97142] via-[#6E3A06] to-[#B08D57]",
-    4: "from-[#DC826B] via-[#CB6A52] to-[#FFE4BB]",
-    5: "from-[#63645D] via-[#3F3F3D] to-[#858885]",
-  };
   return (
     <section className="relative flex h-fit w-full flex-col items-center gap-4 overflow-hidden rounded-2xl border border-neutral-900 bg-transparent px-4 py-6 backdrop-blur-[1px] transition duration-300 ease-in-out hover:border-neutral-700 hover:backdrop-brightness-150 lg:px-8 lg:py-12 2xl:px-16 2xl:py-24">
       <div className="pointer-events-none flex w-full flex-col gap-4 text-center lg:gap-8">
@@ -24,13 +17,11 @@ export default function Prizes() {
           alright, but what can I win?
         </h2>
         <ul className="pointer-events-auto grid w-full grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-5">
-          {metadata.prizes.map((prize, i) => (
+          {metadata.prizes.map((prize, k) => (
             <li
-              className={`${
-                colors[prize.place]
-              } relative z-[1] flex aspect-square flex-col items-center justify-center overflow-hidden rounded-xl border border-neutral-900 bg-gradient-to-br transition duration-300 ease-in-out hover:-translate-y-2 hover:brightness-[130%] [&>#place]:hover:text-white/20
+              className={`${prize.color} relative z-[1] flex aspect-square flex-col items-center justify-center overflow-hidden rounded-xl border border-neutral-900 bg-gradient-to-br transition duration-300 ease-in-out hover:-translate-y-2 hover:brightness-[130%] [&>#place]:hover:text-white/20
               `}
-              key={i}
+              key={k}
             >
               <p
                 id="place"

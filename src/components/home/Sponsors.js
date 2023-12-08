@@ -5,11 +5,11 @@ import { sponsors } from "@/data/sponsors";
 
 export default async function Sponsors() {
   return (
-    <section className="flex w-full flex-col items-center gap-2">
+    <section className="flex w-full flex-col items-center gap-4">
       <Link
         href={`mailto:${metadata.email}`}
         target="_blank"
-        className="z-[1] animate-pulse text-lg font-semibold tracking-tighter text-white/50 transition duration-300 ease-in-out hover:animate-none hover:text-white lg:text-left lg:text-xl 2xl:text-2xl"
+        className="z-[1] animate-pulse text-lg font-medium text-white/50 transition duration-300 ease-in-out hover:animate-none hover:text-white lg:text-left lg:text-xl 2xl:text-2xl"
       >
         become a sponsor {":)"}
       </Link>
