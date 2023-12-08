@@ -33,7 +33,7 @@ export default function Prizes() {
               key={i}
             >
               <p
-                className={`absolute scale-150 font-sans text-8xl font-semibold text-white/10`}
+                className={`absolute scale-150 font-mono text-8xl font-semibold text-white/10`}
               >
                 {prize.place}
               </p>
@@ -46,7 +46,7 @@ export default function Prizes() {
       </div>
       <div
         id="prize-container"
-        className={`cursor-wand absolute inset-0 z-[-1] w-full overflow-hidden bg-transparent`}
+        className={`absolute inset-0 z-[-1] w-full cursor-wand overflow-hidden bg-transparent`}
       ></div>
       <Script src="https://kit.fontawesome.com/1ee8f271b9.js" />
     </section>
