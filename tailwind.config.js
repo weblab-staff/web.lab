@@ -12,10 +12,8 @@ module.exports = {
       fontFamily: {
         gilroy: ["Gilroy", ...defaultTheme.fontFamily.sans],
       },
-      keyframes: {
-        "fall-1":{
-          
-        }
+      cursor: {
+        wand: "url('/img/wand.png'), auto",
       },
     },
   },
