@@ -32,6 +32,7 @@ export default function Nav() {
 
       setAtTop(atTop);
     };
+    handleScroll(); //check initial scroll position
 
     // Add event listener to the scroll event
     window.addEventListener("scroll", handleScroll);

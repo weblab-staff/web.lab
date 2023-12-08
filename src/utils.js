@@ -23,7 +23,7 @@ export function starTrail(elementId) {
       "255 255 255",
       "14 173 105",
     ],
-    sizes: ["1.4rem", "1rem", "0.6rem"],
+    sizes: ["1.8rem", "1.4rem", "1.0rem"],
     animations: ["fall-1", "fall-2", "fall-3"],
   };
 
