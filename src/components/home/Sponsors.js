@@ -23,7 +23,7 @@ export default async function Sponsors() {
               className="h-auto w-fit"
             >
               <Image
-                className="opacity-50 grayscale invert transition duration-300 ease-in-out hover:opacity-100"
+                className="aspect-auto opacity-50 grayscale invert transition duration-300 ease-in-out hover:opacity-100"
                 src={`/img/sponsors/${sponsor.img}`}
                 alt={sponsor.name}
                 title={sponsor.name}

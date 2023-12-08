@@ -19,18 +19,18 @@ export default function CodeEditor() {
           <div className="h-3 w-3 rounded-full  bg-yellow-500" />
           <div className="h-3 w-3 rounded-full bg-green-500" />
         </li>
-        <ul className="z-[2] flex h-10 w-full items-center justify-start overflow-x-auto">
+        <datalist className="z-[2] flex h-10 w-full items-center justify-start overflow-x-auto">
           {tabs.map((tab, i) => (
-            <li
+            <option
               className="flex h-full w-full cursor-pointer select-none items-center border-b border-transparent px-4 text-sm tracking-tight text-neutral-400 transition ease-linear aria-selected:border-blue-900 aria-selected:bg-white/5"
               onClick={() => setSelectedTab(i)}
               key={i}
               aria-selected={selectedTab === i}
             >
               {tab.name}
-            </li>
+            </option>
           ))}
-        </ul>
+        </datalist>
       </section>
       <section className="h-full w-full overflow-y-auto">
         <Editor lang={tabs[selectedTab].lang} code={code} setCode={setCode} />

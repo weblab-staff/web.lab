@@ -28,7 +28,7 @@ export default function ClassStructure() {
   }, [activePhase]);
 
   return (
-    <div className="flex h-full w-full flex-col items-center gap-4 rounded-2xl border border-neutral-900 bg-transparent px-4 py-6 backdrop-blur-[1px] transition duration-300 ease-in-out hover:border-neutral-700 hover:backdrop-brightness-125 lg:px-8 lg:py-12 2xl:px-16 2xl:py-24 [&>#thumbnail]:hover:border-neutral-700">
+    <div className="flex h-full w-full flex-col items-center gap-4 rounded-2xl border border-neutral-900 bg-transparent px-4 py-6 backdrop-blur-[1px] transition duration-300 ease-in-out hover:border-neutral-700 hover:backdrop-brightness-150 lg:px-8 lg:py-12 2xl:px-16 2xl:py-24 [&>#thumbnail]:hover:border-neutral-700">
       <div className="flex h-full w-full flex-col gap-2 text-start lg:gap-8">
         <h2 className="text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
           class structure
@@ -36,17 +36,19 @@ export default function ClassStructure() {
         <ul className="flex h-full w-full flex-col justify-between">
           {phases.map((phase, i) => (
             <li
-              className="flex flex-col gap-1 [&>h3]:hover:text-neutral-300 [&>p]:hover:text-neutral-400"
+              className="flex flex-col gap-1 [&>#phase-desc]:hover:text-neutral-400 [&>#phase-title]:hover:text-neutral-300"
               key={i}
             >
-              <h3
+              <option
                 className="text-base font-semibold tracking-tight text-neutral-500 transition duration-300 ease-in-out aria-selected:text-neutral-300 md:text-lg lg:text-xl 2xl:text-2xl"
                 aria-selected={activePhase == i}
+                id="phase-title"
               >
                 phase {i}: {phase.title}
-              </h3>
+              </option>
               <p
                 aria-selected={activePhase == i}
+                id="phase-desc"
                 className="text-sm tracking-tight text-neutral-600 transition duration-300 ease-in-out aria-selected:text-neutral-400 md:text-base lg:text-lg 2xl:text-xl"
               >
                 {phase.desc}
