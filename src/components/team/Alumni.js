@@ -13,8 +13,8 @@ export default function Alumni({ team }) {
             className={`${
               metadata.easterEggs.includes(member.firstName)
                 ? "origin-center duration-1000 hover:rotate-180"
-                : "origin-center duration-300"
-            } flex h-full w-full flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 transition-transform ease-in-out hover:-translate-y-1.5 [&>div>img]:grayscale [&>div>img]:hover:grayscale-0`}
+                : "origin-center duration-300 hover:-translate-y-1"
+            } flex h-full w-full flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 transition-transform ease-in-out [&>div>img]:grayscale [&>div>img]:hover:grayscale-0`}
             key={i}
             style={{ maxWidth: "600px" }}
           >
