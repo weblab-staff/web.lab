@@ -44,7 +44,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <section className="grid h-full w-full grid-cols-1 items-center gap-8 md:grid-cols-2 cursor-wand">
+        <section className="grid h-full w-full grid-cols-1 items-center gap-8 md:grid-cols-2">
           <Audience />
           <ClassStructure />
         </section>
