@@ -1,11 +1,11 @@
 export function starTrail(elementId) {
-  let start = new Date().getTime();
+  let startTime = new Date().getTime();
   let container = document.getElementById(elementId);
 
   const originPosition = { x: 0, y: 0 };
 
   const last = {
-    starTimestamp: start,
+    starTimestamp: startTime,
     starPosition: originPosition,
     mousePosition: originPosition,
   };
