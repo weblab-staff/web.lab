@@ -6,7 +6,7 @@ export const metadata = {
   studentPortal: "https://portal.weblab.is/",
   heroBlurb: "registration is now open!",
   heroBlurbLink: "",
-  easterEggs: ["qiong", "slava"],
+  easterEggs: ["qiong", "slava", "philena"],
   email: "weblab-staff.mit.edu",
   prizes: [
     {
