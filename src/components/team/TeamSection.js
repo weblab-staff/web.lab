@@ -12,7 +12,7 @@ export default function TeamSection({
       <h1 className="z-[1] text-left text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
         {sectionTitle}
       </h1>
-      <ul className="grid w-full grid-cols-4 items-center justify-center gap-4">
+      <ul className="grid w-full grid-cols-2 items-center justify-center gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {section.map((member, i) => (
           <li
             className={`${
@@ -37,12 +37,12 @@ export default function TeamSection({
                 alt={`web.lab staff ${member.firstName} ${member.lastName}`}
               />
             </div>
-            <div className="flex w-full flex-col">
-              <h2 className="text-lg font-semibold tracking-tighter text-white lg:text-xl 2xl:text-2xl">
+            <div className="flex w-full flex-col whitespace-pre-wrap">
+              <h2 className="text-lg font-semibold leading-5 tracking-tighter text-white lg:text-xl 2xl:text-2xl">
                 {member.firstName}{" "}
                 <span className="text-neutral-500">{member.lastName}</span>
               </h2>
-              <h3 className="whitespace-pre-wrap text-sm font-semibold tracking-tighter text-neutral-300 lg:text-base 2xl:text-lg">
+              <h3 className="text-sm font-semibold tracking-tighter text-neutral-300 lg:text-base 2xl:text-lg">
                 {currentTeam
                   ? member.position
                   : member.year != "before2015"

@@ -1,6 +1,6 @@
 "use client";
 
-import { metadata } from "@/data/metadata";
+import { prizes } from "@/data/compInfo";
 import { starTrail } from "@/utils";
 import Script from "next/script";
 import { useEffect } from "react";
@@ -17,7 +17,7 @@ export default function Prizes() {
           alright, but what can I win?
         </h2>
         <ul className="pointer-events-auto grid w-full grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-5">
-          {metadata.prizes.map((prize, k) => (
+          {prizes.map((prize, k) => (
             <li
               className={`${prize.color} relative z-[1] flex aspect-square flex-col items-center justify-center overflow-hidden rounded-xl border border-neutral-900 bg-gradient-to-br transition duration-300 ease-in-out hover:-translate-y-2 hover:brightness-[130%] [&>#place]:hover:text-white/20
               `}
@@ -30,7 +30,7 @@ export default function Prizes() {
                 {prize.place}
               </p>
               <p className="z-[1] text-3xl font-semibold text-neutral-200 antialiased transition duration-300 ease-in-out lg:text-4xl 2xl:text-5xl">
-                {prize.prize}
+                {prize.value}
               </p>
             </li>
           ))}
