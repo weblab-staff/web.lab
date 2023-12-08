@@ -1,6 +1,5 @@
 "use client";
 
-import { prizes } from "@/data/compInfo";
 import { starTrail } from "@/utils";
 import Script from "next/script";
 import { useEffect } from "react";
@@ -25,7 +24,7 @@ export default function Prizes() {
             >
               <p
                 id="place"
-                className={`font-inter absolute scale-150 text-6xl font-semibold text-white/10 transition duration-300 ease-in-out lg:text-7xl xl:text-8xl`}
+                className={`absolute scale-150 font-inter text-6xl font-semibold text-white/10 transition duration-300 ease-in-out lg:text-7xl xl:text-8xl`}
               >
                 {prize.place}
               </p>
@@ -45,4 +44,30 @@ export default function Prizes() {
   );
 }
 
-//
+const prizes = [
+  {
+    place: "1",
+    value: "$3,500",
+    color: "from-[#C5AB50] via-[#AC933E] to-[#FBF8AE]",
+  },
+  {
+    place: "2",
+    value: "$2,500",
+    color: "from-[#B4B9BE] via-[#716F71] to-[#A8A9AD]",
+  },
+  {
+    place: "3",
+    value: "$2,000",
+    color: "from-[#A97142] via-[#6E3A06] to-[#B08D57]",
+  },
+  {
+    place: "4",
+    value: "$1,750",
+    color: "from-[#DC826B] via-[#CB6A52] to-[#FFE4BB]",
+  },
+  {
+    place: "5",
+    value: "$1,000",
+    color: "from-[#63645D] via-[#3F3F3D] to-[#858885]",
+  },
+];

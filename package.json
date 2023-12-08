@@ -14,7 +14,8 @@
     "@uiw/react-codemirror": "^4.21.21",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",

@@ -3,8 +3,31 @@ import Nav from "@/components/global/Nav";
 import { metadata as siteMetadata } from "@/data/metadata";
 
 export const metadata = {
+  metadataBase: new URL(siteMetadata.url),
   title: siteMetadata.title,
   description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.url,
+    siteName: siteMetadata.title,
+    images: [
+      {
+        url: siteMetadata.preview,
+        width: 2560,
+        height: 1325,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  manifest: "/site.webmanifest",
+  twitter: {
+    card: "summary_large_image",
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    images: [siteMetadata.preview],
+  },
 };
 
 export default function RootLayout({ children }) {
