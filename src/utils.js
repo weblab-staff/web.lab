@@ -1,7 +1,7 @@
 export function starTrail(elementId) {
   let start = new Date().getTime();
   let container = document.getElementById(elementId);
-  console.log(container);
+
   const originPosition = { x: 0, y: 0 };
 
   const last = {

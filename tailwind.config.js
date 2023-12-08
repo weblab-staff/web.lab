@@ -13,7 +13,7 @@ module.exports = {
         gilroy: ["Gilroy", ...defaultTheme.fontFamily.sans],
       },
       cursor: {
-        wand: "url('/img/wand.png'), auto",
+        wand: "url('/img/wand.png') 0 0, auto",
       },
     },
   },
