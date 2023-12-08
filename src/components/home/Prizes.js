@@ -33,7 +33,7 @@ export default function Prizes() {
               key={i}
             >
               <p
-                className={`absolute scale-150 text-8xl font-semibold text-white/10 `}
+                className={`absolute scale-150 font-sans text-8xl font-semibold text-white/10`}
               >
                 {prize.place}
               </p>
