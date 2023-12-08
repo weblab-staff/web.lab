@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         gilroy: ["Gilroy", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       cursor: {
         wand: "url('/img/wand.png') 0 0, auto",
