@@ -53,7 +53,7 @@ export default function Nav() {
         <Link
           href="/"
           draggable="false"
-          className="flex items-center gap-2 text-lg font-semibold lg:gap-3 lg:text-2xl"
+          className="flex w-fit items-center gap-2 text-lg font-semibold lg:gap-3 lg:text-2xl"
         >
           <Image
             className="h-auto w-6 select-none lg:w-8"

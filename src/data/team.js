@@ -59,6 +59,9 @@ export const team = {
       lastName: "zhao",
       position: "teaching assistant",
       img: "szhao.png",
+      github: "zhao-stanley",
+      website: "https://szhao.dev/",
+      email: "stanleyz@mit.edu",
     },
     {
       firstName: "enrique",

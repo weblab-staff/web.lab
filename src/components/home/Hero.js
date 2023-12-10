@@ -35,7 +35,7 @@ export default function Hero() {
         </Link>
         <Link
           href={metadata.piazza}
-          className="z-[1] w-full rounded-2xl border border-neutral-700 bg-transparent px-4 py-2 text-center text-sm font-medium tracking-tight shadow-lg transition duration-300 ease-in-out hover:bg-white/10 lg:w-1/3 lg:text-base"
+          className="z-[1] w-full rounded-2xl border border-neutral-700 bg-transparent px-4 py-2 text-center text-sm font-medium tracking-tight shadow-lg backdrop-brightness-50 transition duration-300 ease-in-out hover:bg-white/10 lg:w-1/3 lg:text-base"
         >
           join piazza
         </Link>

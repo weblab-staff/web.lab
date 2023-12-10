@@ -14,7 +14,11 @@ module.exports = {
         inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       cursor: {
-        wand: "url('/img/wand.png') 0 0, auto",
+        wand: "url('/img/cursors/wand.png') 0 0, auto",
+        money: "url('/img/cursors/money.png') 0 0, auto",
+        cool: "url('/img/cursors/cool.png') 0 0, auto",
+        raisedeyebrow: "url('/img/cursors/raisedeyebrow.png') 0 0, auto",
+        starstruck: "url('/img/cursors/starstruck.png') 0 0, auto",
       },
     },
   },

@@ -6,6 +6,7 @@ import ClassStructure from "@/components/home/ClassStructure";
 import Audience from "@/components/home/WhoAndWhy";
 import Prizes from "@/components/home/Prizes";
 import WhatIs from "@/components/home/WhatIs";
+import BottomCTA from "@/components/home/BottomCTA";
 
 export default function Home() {
   return (
@@ -19,7 +20,6 @@ export default function Home() {
         </div>
         <Sponsors />
       </section>
-
       <section className="flex h-full w-full max-w-7xl flex-col gap-8 px-6 pb-24 2xl:px-0">
         <WhatIs />
         <section className="grid h-full w-full grid-cols-1 items-center gap-8 md:grid-cols-2">
@@ -27,6 +27,7 @@ export default function Home() {
           <ClassStructure />
         </section>
         <Prizes />
+        <BottomCTA />
       </section>
     </section>
   );
