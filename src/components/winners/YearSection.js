@@ -18,11 +18,13 @@ export default function YearSection({ yearData }) {
           )}
           <ul className="grid w-full grid-cols-1 items-center justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
             {division.winners.map((project, i) => (
-              <li
+              <Link
                 className={`flex h-full w-full flex-col gap-y-2 rounded-2xl border border-neutral-700 ${
                   placeColor[`${project.place}`]
                 } cursor-starstruck bg-gradient-to-br p-4 backdrop-blur transition duration-300 ease-in-out hover:-translate-y-1 hover:brightness-125`}
                 key={i}
+                target="_blank"
+                href={`https://${project.href}`}
                 style={{ maxWidth: "600px" }}
               >
                 <div className="relative aspect-video h-auto w-full overflow-hidden rounded-md border border-neutral-700">
@@ -51,7 +53,7 @@ export default function YearSection({ yearData }) {
                     {project.desc}
                   </p>
                 </div>
-              </li>
+              </Link>
             ))}
           </ul>
         </>
