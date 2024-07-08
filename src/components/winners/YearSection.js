@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { metadata } from "@/data/metadata";
 import Link from "next/link";
 import placeholder from "../../../public/img/logo.svg";
+import { Fragment } from "react";
 
 export default function YearSection({ yearData }) {
   return (
@@ -9,8 +9,8 @@ export default function YearSection({ yearData }) {
       <h1 className="whitespace-pre-wrap text-2xl font-semibold tracking-tighter lg:text-3xl 2xl:text-4xl">
         {yearData.year}. {yearData.theme}
       </h1>
-      {yearData.divisions.map((division) => (
-        <>
+      {yearData.divisions.map((division, k) => (
+        <Fragment key={k}>
           {yearData.divisions.length > 1 && (
             <h2 className="text-xl font-medium tracking-tighter lg:text-2xl 2xl:text-3xl">
               {division.name}
@@ -56,7 +56,7 @@ export default function YearSection({ yearData }) {
               </Link>
             ))}
           </ul>
-        </>
+        </Fragment>
       ))}
     </section>
   );

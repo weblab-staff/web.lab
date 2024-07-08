@@ -14,10 +14,6 @@ const navLinks = [
     href: "/team",
   },
   {
-    name: "faq",
-    href: "/faq",
-  },
-  {
     name: "winners",
     href: "/winners",
   },

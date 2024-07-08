@@ -5,6 +5,8 @@ export const team = {
       lastName: "choi",
       position: "president",
       img: "kenny.jpg",
+      github: "kenctrl",
+      email: "kenchoi@mit.edu",
     },
     {
       firstName: "tony",
@@ -29,12 +31,16 @@ export const team = {
       lastName: "liu",
       position: "treasurer",
       img: "azliu.png",
+      github: "azliu0",
+      website: "https://azliu.cc/",
+      email: "azliu@mit.edu",
     },
     {
       firstName: "jay",
       lastName: "hilton",
       position: "tech chair",
       img: "jhilton.jpg",
+      email: "jhilton@mit.edu",
     },
     {
       firstName: "joyce",
@@ -47,6 +53,8 @@ export const team = {
       lastName: "jiang",
       position: "publicity chair",
       img: "andy_jiang.png",
+      github: "acyjiang",
+      email: "acyjiang@mit.edu",
     },
     {
       firstName: "helen",

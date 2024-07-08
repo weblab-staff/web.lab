@@ -1,8 +1,5 @@
 import Rays from "@/components/global/Rays";
-import TeamSection from "@/components/team/TeamSection";
-import YearSection from "@/components/winners/YearSection";
-import { team } from "@/data/team";
-import { winners } from "@/data/winners";
+import Rules from "@/components/info/Rules";
 
 export default function Team() {
   return (
@@ -11,15 +8,13 @@ export default function Team() {
         <Rays>
           <section className="flex w-full flex-col items-start gap-2">
             <h1 className="whitespace-pre-wrap text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
-              winners
+              rules
             </h1>
-            <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-400 lg:text-lg 2xl:text-xl">
-              check out the winners of web.lab, you could be next!
+            <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-300 lg:text-lg 2xl:text-xl">
+              important rules for the competition
             </p>
           </section>
-          {winners.map((yearData, k) => (
-            <YearSection yearData={yearData} key={k} />
-          ))}
+          <Rules />
         </Rays>
       </section>
     </section>
