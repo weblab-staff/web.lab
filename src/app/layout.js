@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         style={{
           backgroundSize: "50px 50px",
           backgroundImage:
-            "radial-gradient(circle, #f1f5f914 1px, rgba(0, 0, 0, 0) 1px)",
+            "radial-gradient(circle, #f1f5f924 1px, rgba(0, 0, 0, 0) 1px)",
         }}
       >
         <Nav />
