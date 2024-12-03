@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function TeamSection({
   section,
-  easterEggs,
+  enableEasterEggs,
   sectionTitle,
   currentTeam,
 }) {
@@ -24,7 +24,10 @@ export default function TeamSection({
         {section.map((member, i) => (
           <li
             className={`${
-              easterEggs && metadata.easterEggs.includes(member.firstName)
+              enableEasterEggs &&
+              metadata.easterEggs.includes(
+                `${member.firstName.toLowerCase()} ${member.lastName.toLowerCase()} ${member.year.slice(-2)}`,
+              )
                 ? "origin-center duration-1000 hover:rotate-180"
                 : "origin-center duration-300 hover:-translate-y-1"
             } flex h-full w-full flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 transition-transform ease-in-out [&>div>img]:grayscale [&>div>img]:hover:grayscale-0`}
@@ -37,7 +40,7 @@ export default function TeamSection({
                 fill
                 src={
                   currentTeam
-                    ? `/img/staff/current/${member.img}`
+                    ? `/img/staff/current/${member?.img || "placeholder1.png"}`
                     : `/img/staff/alums/${member.year}/${member.img}`
                 }
                 sizes="33vw"
@@ -46,12 +49,12 @@ export default function TeamSection({
               />
             </div>
             <div className="flex w-full flex-col">
-              <h2 className="text-lg font-semibold leading-5 tracking-tighter text-white lg:text-xl 2xl:text-2xl">
+              <h2 className="text-lg font-semibold lowercase leading-5 tracking-tighter text-white lg:text-xl 2xl:text-2xl">
                 {member.firstName}{" "}
                 <span className="text-neutral-500">{member.lastName}</span>
               </h2>
 
-              <h3 className="text-sm font-semibold tracking-tighter text-neutral-300 lg:text-base 2xl:text-lg">
+              <h3 className="text-sm font-semibold lowercase tracking-tighter text-neutral-300 lg:text-base 2xl:text-lg">
                 {currentTeam
                   ? member.position
                   : member.year != "before2015"

@@ -1,5 +1,88 @@
 export const winners = [
   {
+    year: 2024,
+    theme: "send it or blend it",
+    divisions: [
+      {
+        name: "main division",
+        winners: [
+          {
+            place: "1",
+            name: "Hexblend",
+            creators: ["Adam Zweiger", "Evan Kim", "Justin Chen"],
+            desc: "Hexblend is a game about blending colors. With single-player and multi-player modes with many options, this game offers a diverse palette.",
+            img: "https://i.imgur.com/3HraerR.png",
+            href: "hexblend.onrender.com/",
+          },
+          {
+            place: "2",
+            name: "Maze Craze",
+            creators: ["Ruhundaka Ejilemele", "Christopher Franco", "Dat Tran"],
+            desc: "A round-based maze party game where you try to earn as many coins as you can. Each round, a new perk adds to the chaos.",
+            img: "https://i.imgur.com/8wsQsVr.png",
+            href: "mazecraze.onrender.com/",
+          },
+          {
+            place: "3",
+            name: "Memoia",
+            creators: ["Sophie Wang", "Annabel Tiong"],
+            desc: "Enjoy an immersive study space with timers and a music player. Assign tasks to virtual pets and watch them evolve.",
+            img: "https://i.imgur.com/Ec6xUQz.png",
+            href: "memoia.onrender.com/",
+          },
+          {
+            place: "4",
+            name: "Sharedom",
+            creators: ["LeAnn Tai"],
+            desc: "Discover the ultimate way to borrow anything you need for FREE with Sharedom's innovative point system. Join a vibrant community of sharers!",
+            img: "https://i.imgur.com/tkRaSH7.png",
+            href: "sharedom.onrender.com/",
+          },
+          {
+            place: "hm",
+            name: "Melting Pot",
+            creators: ["Kathryn Le", "Rachel Lu"],
+            desc: "Melting Pot is a multiplayer, competitive game where players make hotpot dishes to earn points and learn about multicultural foods!",
+            img: "https://i.imgur.com/JBrfpa0.png",
+            href: "melting-pot.onrender.com/",
+          },
+          {
+            place: "hm",
+            name: "Purrductive",
+            creators: ["Andy Phung"],
+            desc: "Purrductive is a cat-themed platform for virtual study rooms! Users can join rooms, add their tasks, and complete them to attract cats!",
+            img: "https://i.imgur.com/fnD3K4h.png",
+            href: "purrductive.onrender.com/",
+          },
+          {
+            place: "hm",
+            name: "RoomCraft",
+            creators: ["Jasmine Shone", "Minnie Liang", "Allison Fan"],
+            desc: "Slay the dragons of your life with RoomCraft, an all-in-one productivity hub that uses gamification to incentivize action.",
+            img: "https://i.imgur.com/tIWxMLt.png",
+            href: "roomcraft-p861.onrender.com/",
+          },
+          {
+            place: "sf",
+            name: "Ambi",
+            creators: ["Sage Maxwell", "Jing Xuan Sun"],
+            desc: "Ambi is a room-design audio workstation, where users can create the rooms of their dreams using furniture that produce sound which users can mix.",
+            img: "https://i.imgur.com/y7MXQXw.png",
+            href: "ambi.onrender.com/",
+          },
+          {
+            place: "sf",
+            name: "Dine and Dash",
+            creators: ["Thomas Wu", "Krystal Montgomery"],
+            desc: "Dine and Dash is a food trivia and geographical exploration game. Embark on the ultimate heist to seize and savor the world's most exquisite dishes!",
+            img: "https://i.imgur.com/H3qnXzH.png",
+            href: "dine-and-dash.onrender.com",
+          },
+        ],
+      },
+    ],
+  },
+  {
     year: 2023,
     theme: "u & i",
     divisions: [

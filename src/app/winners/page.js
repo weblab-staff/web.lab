@@ -1,7 +1,5 @@
 import Rays from "@/components/global/Rays";
-import TeamSection from "@/components/team/TeamSection";
 import YearSection from "@/components/winners/YearSection";
-import { team } from "@/data/team";
 import { winners } from "@/data/winners";
 
 export default function Team() {

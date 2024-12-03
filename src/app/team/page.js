@@ -15,7 +15,7 @@ export default function Team() {
           <TeamSection
             section={team.alums}
             sectionTitle={"our amazing alumni"}
-            easterEggs={true}
+            enableEasterEggs={true}
           />
         </Rays>
       </section>
