@@ -1,6 +1,6 @@
 import Rays from "@/components/global/Rays";
-import Rules from "@/components/info/Rules";
-
+import Faq from "@/components/info/Faq";
+import Schedule from "@/components/info/Schedule";
 export default function Team() {
   return (
     <section className="flex h-full min-h-screen w-full flex-col items-center justify-center overflow-hidden">
@@ -8,13 +8,14 @@ export default function Team() {
         <Rays>
           <section className="flex w-full flex-col items-start gap-2">
             <h1 className="whitespace-pre-wrap text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
-              rules
+              info
             </h1>
             <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-300 lg:text-lg 2xl:text-xl">
-              important rules for the competition
+              important things to know about the competition
             </p>
           </section>
-          <Rules />
+          <Faq />
+          <Schedule />
         </Rays>
       </section>
     </section>
