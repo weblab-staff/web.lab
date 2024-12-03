@@ -123,7 +123,7 @@ export default function Footer() {
           <Link
             href="https://www.stanleyzhao.com/"
             target="_blank"
-            className="inline w-fit cursor-cool text-neutral-700 transition duration-300 ease-in-out hover:text-neutral-400 [&>span]:hover:grayscale-0"
+            className="cursor-eyes inline w-fit font-normal text-neutral-700 transition duration-300 ease-in-out hover:text-neutral-400 [&>span]:hover:grayscale-0"
           >
             built by sz with <span className="animate-pulse grayscale">❤️</span>
           </Link>

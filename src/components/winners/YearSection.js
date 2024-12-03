@@ -21,7 +21,7 @@ export default function YearSection({ yearData }) {
               <Link
                 className={`flex h-full w-full flex-col gap-y-2 rounded-2xl border border-neutral-700 ${
                   placeColor[`${project.place}`]
-                } cursor-starstruck bg-gradient-to-br p-4 backdrop-blur transition duration-300 ease-in-out hover:-translate-y-1 hover:brightness-125`}
+                } cursor-eyes bg-gradient-to-br p-4 backdrop-blur transition duration-300 ease-in-out hover:-translate-y-1 hover:brightness-125`}
                 key={i}
                 target="_blank"
                 href={`https://${project.href}`}

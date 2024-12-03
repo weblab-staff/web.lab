@@ -19,6 +19,7 @@ module.exports = {
         cool: "url('/img/cursors/cool.png') 0 0, auto",
         raisedeyebrow: "url('/img/cursors/raisedeyebrow.png') 0 0, auto",
         starstruck: "url('/img/cursors/starstruck.png') 0 0, auto",
+        eyes: "url('/img/cursors/eyes.png') 0 0, auto",
       },
     },
   },
