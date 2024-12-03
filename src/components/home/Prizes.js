@@ -59,7 +59,10 @@ export default function Prizes() {
         id="prize-container"
         className={`absolute inset-0 z-[-1] w-full cursor-wand overflow-hidden bg-transparent`}
       />
-      <Script src="fontawesome.js" />
+      <Script
+        src="https://kit.fontawesome.com/c0acf637b0.js"
+        crossOrigin="anonymous"
+      />
     </section>
   );
 }
