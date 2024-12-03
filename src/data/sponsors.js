@@ -1,17 +1,17 @@
 export const sponsors = [
   {
-    name: "Vividly",
-    img: "vividly.svg",
-    href: "govividly.com",
+    name: "fetch.ai",
+    img: "fetchai.svg",
+    href: "fetch.ai",
   },
   {
-    name: "Mobi",
-    img: "mobi.png",
-    href: "takemobi.com",
+    name: "Akamai",
+    img: "akamai.svg",
+    href: "akamai.com",
   },
   {
-    name: "Render",
-    img: "render.png",
-    href: "render.com",
+    name: "Codeium",
+    img: "codeium.svg",
+    href: "codeium.com",
   },
 ];
