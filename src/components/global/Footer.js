@@ -121,7 +121,7 @@ export default function Footer() {
           © {new Date().getFullYear()} web.lab
           <br />
           <Link
-            href="https://szhao.dev/"
+            href="https://www.stanleyzhao.com/"
             target="_blank"
             className="inline w-fit cursor-cool text-neutral-700 transition duration-300 ease-in-out hover:text-neutral-400 [&>span]:hover:grayscale-0"
           >

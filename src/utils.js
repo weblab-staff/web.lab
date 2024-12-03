@@ -112,4 +112,3 @@ export function starTrail(elementId) {
 
   container.onmouseleave = () => updateLastMousePosition(originPosition);
 }
-
