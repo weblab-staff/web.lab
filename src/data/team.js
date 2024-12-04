@@ -39,7 +39,10 @@ export const team = {
       firstName: "evan",
       lastName: "kim",
       position: "treasurer",
-      img: "",
+      img: "evankim.jpg",
+      github: "evnkim",
+      email: "evnkim@mit.edu",
+      website: "https://evn.kim/",
     },
     {
       firstName: "daniel",
@@ -63,7 +66,8 @@ export const team = {
       firstName: "samvit",
       lastName: "das",
       position: "historian",
-      img: "",
+      img: "samvitdas.jpg",
+      email: "samvitd@mit.edu",
     },
     {
       firstName: "nicholas",

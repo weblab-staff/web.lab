@@ -8,13 +8,31 @@ export default function Team() {
         <Rays>
           <section className="flex w-full flex-col items-start gap-2">
             <h1 className="whitespace-pre-wrap text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
-              info
+              rules
             </h1>
             <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-300 lg:text-lg 2xl:text-xl">
-              important things to know about the competition
+              full list of rules for the competiton as well as in-depth details
+              about the class can be found here
+            </p>
+          </section>
+          <section className="flex w-full flex-col items-start gap-2">
+            <h1 className="whitespace-pre-wrap text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
+              faq
+            </h1>
+            <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-300 lg:text-lg 2xl:text-xl">
+              frequently asked questions
             </p>
           </section>
           <Faq />
+
+          <section className="flex w-full flex-col items-start gap-2">
+            <h1 className="whitespace-pre-wrap text-3xl font-semibold tracking-tighter lg:text-4xl 2xl:text-5xl">
+              schedule
+            </h1>
+            <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-300 lg:text-lg 2xl:text-xl">
+              for lectures, workshops, deadlines, and more
+            </p>
+          </section>
           <Schedule />
         </Rays>
       </section>
