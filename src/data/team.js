@@ -27,13 +27,13 @@ export const team = {
       firstName: "annabel",
       lastName: "tiong",
       position: "operations chair",
-      img: "",
+      img: "annabel.jpg",
     },
     {
       firstName: "lucas",
       lastName: "bautista",
       position: "operations chair",
-      img: "",
+      img: "lucas.jpg",
     },
     {
       firstName: "evan",
@@ -48,19 +48,19 @@ export const team = {
       firstName: "daniel",
       lastName: "hong",
       position: "tech chair",
-      img: "",
+      img: "daniel.jpg",
     },
     {
       firstName: "david",
       lastName: "chaudhari",
       position: "sponsor chair",
-      img: "",
+      img: "david.jpg",
     },
     {
       firstName: "sophie",
       lastName: "wang",
       position: "publicity chair",
-      img: "",
+      img: "sophie.jpg",
     },
     {
       firstName: "samvit",
