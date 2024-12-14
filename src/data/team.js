@@ -70,18 +70,18 @@ export const team = {
       email: "samvitd@mit.edu",
     },
     {
-      firstName: "nicholas",
-      lastName: "tsao",
-      position: "eternal staff",
-      img: "nicholas.jpg",
-    },
-    {
       firstName: "kenneth",
       lastName: "choi",
       position: "eternal staff",
       img: "kenny.jpg",
       github: "kenctrl",
       email: "kenchoi@mit.edu",
+    },
+    {
+      firstName: "nicholas",
+      lastName: "tsao",
+      position: "eternal staff",
+      img: "nicholas.jpg",
     },
   ],
   alums: [
