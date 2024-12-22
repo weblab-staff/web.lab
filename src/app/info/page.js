@@ -1,6 +1,6 @@
 import Rays from "@/components/global/Rays";
 import Faq from "@/components/info/Faq";
-import Schedule from "@/components/info/Schedule";
+
 export default function Team() {
   return (
     <section className="flex h-full min-h-screen w-full flex-col items-center justify-center overflow-hidden">

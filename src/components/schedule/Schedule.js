@@ -99,7 +99,6 @@ function compareDates(firstDate, secondDate) {
 
 export default async function Schedule() {
   const events = await getEvents();
-  console.log(events);
   let week = 0;
   const dates = Object.keys(events);
 
