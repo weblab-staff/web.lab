@@ -1,5 +1,5 @@
 import Rays from "@/components/global/Rays";
-import Schedule from "@/components/info/Schedule";
+import Schedule from "@/components/schedule/Schedule";
 
 export default function SchedulePage() {
   return (

@@ -112,3 +112,24 @@ export function starTrail(elementId) {
 
   container.onmouseleave = () => updateLastMousePosition(originPosition);
 }
+
+export function getTime(date) {
+  date = new Date(
+    date.toLocaleString("en-US", { timeZone: "America/New_York" }),
+  );
+  let h = date.getHours();
+  let m = date.getMinutes();
+
+  let period = h < 12 ? "AM" : "PM";
+  if (!h) {
+    h = 12;
+  } else {
+    h -= 12 * (h > 12);
+  }
+
+  // precede with 0 if needed
+  h = ("0" + h).slice(-2);
+  m = ("0" + m).slice(-2);
+
+  return `${h}:${m}${period}`;
+}
