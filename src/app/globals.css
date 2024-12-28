@@ -250,3 +250,19 @@
     transform: rotateX(35deg) translateY(-50%);
   }
 }
+
+/* Text marquee animation */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.text-marquee {
+  animation: marquee 10s linear;
+  animation-fill-mode: forwards;
+}
