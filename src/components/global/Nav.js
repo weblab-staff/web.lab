@@ -6,6 +6,10 @@ import Link from "next/link";
 
 const navLinks = [
   {
+    name: "schedule",
+    href: "/schedule",
+  },
+  {
     name: "info",
     href: "/info",
   },
