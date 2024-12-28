@@ -17,4 +17,10 @@ export const sponsors = [
     href: "codeium.com",
     size: 150,
   },
+  {
+    name: "Suno",
+    img: "suno.svg",
+    href: "suno.com",
+    size: 100,
+  },
 ];
