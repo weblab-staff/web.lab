@@ -8,8 +8,9 @@ function inferType(event) {
     return "lunch";
   if (
     title.includes("milestone") ||
-    (desc !== undefined && desc.includes("milestone"))
+    (desc !== undefined && (desc.includes("milestone") || desc.includes("hw")))
   )
+    // remove includes milestone after we update everything
     return "hw";
   if (
     title.includes("office hours") ||
@@ -21,30 +22,30 @@ function inferType(event) {
 
 function parseDesc(event) {
   let lecturers = undefined;
-  if (event?.description?.includes("type:")) {
-    if (event.description.includes("\n")) {
-      let metadata = event.description.replace("\n", "").split("type:");
-      lecturers =
-        metadata[0] !== "" ? metadata[0].replace(", ", " & ") : undefined;
-    } else {
-      let metadata = event.description.split("type:");
-      lecturers =
-        metadata[0] !== "" ? metadata[0].replace(", ", " & ") : undefined;
+  let links = undefined;
+  let metadata = event?.description?.split("\n");
+  let numMetadata = metadata?.length;
+
+  if (numMetadata > 1) {
+    lecturers = metadata[0];
+    if (numMetadata > 2) {
+      links = metadata[2].split(",");
     }
   }
-  return lecturers;
+
+  return { lecturers, links };
 }
 
 function createEvent(event) {
   let start = new Date(event.start.dateTime || event.start.date);
   let end = new Date(event.end.dateTime || event.start.date);
-  let lecturers = parseDesc(event);
+  let { lecturers, links } = parseDesc(event);
 
   return {
     name: event.summary,
     type: inferType(event),
     where: event.location,
-    links: event.attachments || [],
+    links: links,
     start: event.start.dateTime ? getTime(start) : "11:59PM",
     end: getTime(start) != getTime(end) ? getTime(end) : undefined,
     lecturers: lecturers,
