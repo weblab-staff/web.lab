@@ -124,7 +124,7 @@ export default async function Schedule() {
           <section
             key={date}
             id={startOfWeek ? `week-${week}` : undefined}
-            className="flex w-full flex-col gap-4 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur-2xl transition duration-300 ease-in-out lg:p-8"
+            className="flex w-full flex-col gap-4 pt-16"
           >
             <h3 className="text-xl font-semibold tracking-tighter text-white lg:text-2xl 2xl:text-3xl">
               {new Date(date)
