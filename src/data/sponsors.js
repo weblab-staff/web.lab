@@ -9,6 +9,7 @@ export const sponsors = [
     name: "fetch.ai",
     img: "fetchai.svg",
     href: "fetch.ai",
+    invert: true,
     size: 300,
   },
   {
@@ -21,6 +22,13 @@ export const sponsors = [
     name: "Suno",
     img: "suno.svg",
     href: "suno.com",
+    size: 100,
+  },
+  {
+    name: "Enhearten",
+    img: "enhearten.svg",
+    href: "enhearten.com",
+    invert: true,
     size: 100,
   },
 ];

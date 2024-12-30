@@ -1,5 +1,6 @@
 import { getTime } from "@/utils";
 import ScheduleBlock from "@/components/schedule/ScheduleBlock";
+import WeekSelector from "@/components/schedule/WeekSelector";
 
 function inferType(event) {
   const title = event.summary.toLowerCase();
@@ -23,11 +24,14 @@ function inferType(event) {
 function parseDesc(event) {
   let lecturers = undefined;
   let links = undefined;
-  let metadata = event?.description?.split("\n");
+  // first replace all <br> with \n, then remove all html tags, then split by \n
+  let metadata = event?.description
+    ?.replaceAll("<br>", "\n")
+    .replaceAll(/<[^>]*>/g, "")
+    .split("\n");
   let numMetadata = metadata?.length;
-
   if (numMetadata > 1) {
-    lecturers = metadata[0];
+    lecturers = metadata[1];
     if (numMetadata > 2) {
       links = metadata[2].split(",");
     }
@@ -105,26 +109,19 @@ export default async function Schedule() {
 
   return (
     <>
+      <WeekSelector dates={dates} />
       {dates.map((date) => {
-        let startOfWeek = false;
-        if (dates.indexOf(date) == 0) {
-          startOfWeek = true;
-          week++;
-        } else {
-          let currentIndex = dates.indexOf(date);
-          let previousDate = dates[currentIndex - 1];
+        const startOfWeek =
+          dates.indexOf(date) === 0 ||
+          compareDates(date, dates[dates.indexOf(date) - 1]);
 
-          if (compareDates(date, previousDate)) {
-            startOfWeek = true;
-            week++;
-          }
-        }
+        if (startOfWeek) week++;
 
         return (
           <section
             key={date}
             id={startOfWeek ? `week-${week}` : undefined}
-            className="flex w-full flex-col gap-4 pt-16"
+            className="z-[1] flex w-full flex-col gap-4 pt-16"
           >
             <h3 className="text-xl font-semibold tracking-tighter text-white lg:text-2xl 2xl:text-3xl">
               {new Date(date)
