@@ -61,7 +61,7 @@ export default function Nav() {
             src={logo}
             alt="web.lab Logo"
           />
-          {"{web.lab}"}
+          <span className="hidden text-white lg:block">web.lab</span>
         </Link>
         <ul className="flex w-full items-center justify-end gap-3 text-sm tracking-tight text-white lg:gap-6 lg:text-base">
           {navLinks.map((link, i) => (
