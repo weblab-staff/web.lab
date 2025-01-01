@@ -1,4 +1,4 @@
-export const winners = [
+export const hof = [
   {
     year: 2024,
     theme: "send it or blend it",

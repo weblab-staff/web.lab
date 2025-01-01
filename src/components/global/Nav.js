@@ -18,8 +18,8 @@ const navLinks = [
     href: "/team",
   },
   {
-    name: "winners",
-    href: "/winners",
+    name: "hof",
+    href: "/hof",
   },
 ];
 
