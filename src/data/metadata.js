@@ -16,4 +16,5 @@ export const metadata = {
     "andrew liu 24",
   ],
   email: "weblab-staff.mit.edu",
+  hideCalendar: false, // simple utility to hide calendar on frontend
 };

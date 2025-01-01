@@ -1,6 +1,7 @@
-import { getTime } from "@/utils";
+import { getTime, getFakeData } from "@/utils";
 import ScheduleBlock from "@/components/schedule/ScheduleBlock";
 import WeekSelector from "@/components/schedule/WeekSelector";
+import { metadata } from "@/data/metadata";
 
 function inferType(event) {
   const title = event.summary.toLowerCase();
@@ -64,11 +65,17 @@ async function getEvents() {
   const filteredEvents = json.items.filter((event) => {
     const eventDate = new Date(event.start.dateTime);
     const now = new Date();
-    const nextYear = now.getFullYear() + 1;
-    const cutoffDate = new Date(nextYear, 0, 1); // January 1st of the following year
+    const nowYear = now.getFullYear();
+    const nextYear = nowYear + 1;
+    // Find first Monday of the year by starting at Jan 1 and moving forward until we hit a Monday
+    const cutoffDate = new Date(nowYear, 0, 1);
+    while (cutoffDate.getDay() !== 1) {
+      // 1 represents Monday
+      cutoffDate.setDate(cutoffDate.getDate() + 1);
+    }
 
-    // If it's after February of the current year, set cutoff to January 1st of the year after next
-    if (now.getMonth() === 1 && now.getDate() > 1) {
+    // If it's after June of the current year, set cutoff to first monday of the next year
+    if (now.getMonth() === 5 && now.getDate() > 1) {
       cutoffDate.setFullYear(nextYear + 1);
     }
 
@@ -106,8 +113,9 @@ export default async function Schedule() {
   const events = await getEvents();
   let week = 0;
   const dates = Object.keys(events);
+  let fakeEvents = getFakeData();
 
-  return (
+  return !metadata.hideCalendar && dates.length > 0 ? (
     <>
       <WeekSelector dates={dates} />
       {dates.map((date) => {
@@ -138,6 +146,31 @@ export default async function Schedule() {
           </section>
         );
       })}
+    </>
+  ) : (
+    <>
+      <h1 className="absolute top-1/2 animate-pulse text-center text-3xl font-semibold tracking-tighter text-white lg:text-4xl 2xl:text-5xl">
+        coming soon...
+      </h1>
+      {Object.keys(fakeEvents).map((date) => (
+        <section
+          key={date}
+          className="z-[1] flex w-full flex-col gap-4 pt-16 blur-sm"
+        >
+          <h3 className="text-xl font-semibold tracking-tighter text-white lg:text-2xl 2xl:text-3xl">
+            {new Date(date)
+              .toLocaleDateString("en-us", {
+                dateStyle: "full",
+              })
+              .toLowerCase()}
+          </h3>
+          <ul className="flex w-full flex-col">
+            {fakeEvents[date].map((event, k) => (
+              <ScheduleBlock event={event} type={event.type} key={k} />
+            ))}
+          </ul>
+        </section>
+      ))}
     </>
   );
 }

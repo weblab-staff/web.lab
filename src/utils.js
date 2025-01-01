@@ -133,3 +133,108 @@ export function getTime(date) {
 
   return `${h}:${m}${period}`;
 }
+
+export function getFakeData() {
+  return {
+    [new Date().toLocaleDateString()]: [
+      {
+        name: "Lorem Ipsum Introduction Lecture",
+        type: "lec",
+        where: "Building 123, Room 456",
+        links: ["https://example.com/slides", "https://example.com/recording"],
+        start: "10:00AM",
+        end: "11:30AM",
+        lecturers: "Prof. John Doe",
+      },
+      {
+        name: "Dolor Sit Amet Office Hours",
+        type: "oh",
+        where: "Virtual",
+        links: ["https://zoom.us/fake-link"],
+        start: "2:00PM",
+        end: "4:00PM",
+        lecturers: "Teaching Assistants",
+      },
+    ],
+    [new Date(Date.now() + 86400000).toLocaleDateString()]: [
+      {
+        name: "Consectetur Advanced Topics",
+        type: "lec",
+        where: "Building 456, Room 789",
+        links: [
+          "https://example.com/slides-2",
+          "https://example.com/recording-2",
+        ],
+        start: "9:30AM",
+        end: "11:00AM",
+        lecturers: "Prof. Jane Smith",
+      },
+      {
+        name: "Project Milestone 1 Due",
+        type: "hw",
+        where: "Online Submission",
+        links: ["https://example.com/milestone1"],
+        start: "11:59PM",
+        lecturers: undefined,
+      },
+    ],
+    [new Date(Date.now() + 2 * 86400000).toLocaleDateString()]: [
+      {
+        name: "Adipiscing Elit Lab Session",
+        type: "lec",
+        where: "Lab Building, Room 101",
+        links: ["https://example.com/lab-materials"],
+        start: "1:00PM",
+        end: "3:00PM",
+        lecturers: "Dr. Alex Johnson",
+      },
+      {
+        name: "Lunch",
+        type: "lunch",
+        where: undefined,
+        start: "12:00PM",
+        end: "1:00PM",
+        lecturers: undefined,
+      },
+    ],
+    [new Date(Date.now() + 3 * 86400000).toLocaleDateString()]: [
+      {
+        name: "Sed Do Eiusmod Workshop",
+        type: "lec",
+        where: "Innovation Hub",
+        links: ["https://example.com/workshop"],
+        start: "2:00PM",
+        end: "4:00PM",
+        lecturers: "Prof. John Doe, Dr. Jane Smith",
+      },
+    ],
+    [new Date(Date.now() + 4 * 86400000).toLocaleDateString()]: [
+      {
+        name: "Tempor Incididunt Discussion",
+        type: "lec",
+        where: "Building 123, Room 456",
+        links: ["https://example.com/discussion"],
+        start: "10:00AM",
+        end: "11:30AM",
+        lecturers: "Teaching Assistants",
+      },
+      {
+        name: "Extra Office Hours",
+        type: "oh",
+        where: "Virtual",
+        links: ["https://zoom.us/extra-oh"],
+        start: "3:00PM",
+        end: "5:00PM",
+        lecturers: "Prof. John Doe",
+      },
+      {
+        name: "Weekly Assignment Due",
+        type: "hw",
+        where: "Online Submission",
+        links: ["https://example.com/homework2"],
+        start: "11:59PM",
+        lecturers: undefined,
+      },
+    ],
+  };
+}

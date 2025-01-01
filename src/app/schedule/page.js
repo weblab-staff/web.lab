@@ -1,6 +1,6 @@
 import Rays from "@/components/global/Rays";
 import Schedule from "@/components/schedule/Schedule";
-import Link from "next/link";
+
 export default function SchedulePage() {
   return (
     <section className="flex h-full min-h-screen w-full flex-col items-center justify-center overflow-hidden">
