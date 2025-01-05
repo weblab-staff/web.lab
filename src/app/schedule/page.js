@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import Rays from "@/components/global/Rays";
 import Schedule from "@/components/schedule/Schedule";
 
