@@ -12,8 +12,8 @@ const phases = [
     desc: "the learning phase of web.lab lasts for the first two weeks of IAP, with lectures and workshops every day. the first week goes over fundamental topics while the second week dives into more advanced topics and sponsor lectures.",
   },
   {
-    title: "team selection",
-    desc: "phase 2 culminates in a hackathon, where teams will work on their websites. staff will be hosting office hours and answering questions on online.",
+    title: "competition",
+    desc: "for the last two weeks of IAP, teams build their own web apps to enter into the competition!",
   },
 ];
 
