@@ -43,7 +43,7 @@ function parseDesc(event) {
 
 function createEvent(event) {
   let start = new Date(event.start.dateTime || event.start.date);
-  let end = new Date(event.end.dateTime || event.end.date);
+  let end = new Date(event.end.dateTime || event.start.date);
   let { lecturers, links } = parseDesc(event);
 
   return {
@@ -89,7 +89,8 @@ async function getEvents() {
   const groupedEvents = {};
 
   sortedEvents.map((e) => {
-    const date = new Date(e.start.dateTime).toLocaleDateString();
+    const eventDate = e.start.dateTime || e.start.date;
+    const date = new Date(eventDate).toLocaleDateString();
     if (groupedEvents[date] == undefined) {
       groupedEvents[date] = [];
     }
