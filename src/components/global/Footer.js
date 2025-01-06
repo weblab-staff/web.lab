@@ -117,13 +117,20 @@ export default function Footer() {
             ))}
           </section>
         </div>
-        <span className="w-fit text-xs font-semibold text-neutral-400 lg:text-base">
+        <span className="flex w-fit flex-col items-center text-xs font-semibold text-neutral-400 lg:text-base">
           © {new Date().getFullYear()} web.lab
           <br />
           <Link
+            href="https://accessibility.mit.edu/"
+            target="_blank"
+            className="font-normal text-neutral-400 hover:underline"
+          >
+            accessibility
+          </Link>
+          <Link
             href="https://www.stanleyzhao.com/"
             target="_blank"
-            className="cursor-eyes inline w-fit font-normal text-neutral-700 transition duration-300 ease-in-out hover:text-neutral-400 [&>span]:hover:grayscale-0"
+            className="inline w-fit cursor-eyes font-normal text-neutral-700 transition duration-300 ease-in-out hover:text-neutral-400 [&>span]:hover:grayscale-0"
           >
             built by sz with <span className="animate-pulse grayscale">❤️</span>
           </Link>
