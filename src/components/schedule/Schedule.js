@@ -89,8 +89,15 @@ async function getEvents() {
   const groupedEvents = {};
 
   sortedEvents.map((e) => {
+    // Convert to EST/EDT
     const eventDate = e.start.dateTime || e.start.date;
-    const date = new Date(eventDate).toLocaleDateString();
+    const date = new Date(eventDate).toLocaleString("en-US", {
+      timeZone: "America/New_York",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    });
+
     if (groupedEvents[date] == undefined) {
       groupedEvents[date] = [];
     }
