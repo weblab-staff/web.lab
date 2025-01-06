@@ -43,7 +43,7 @@ function parseDesc(event) {
 
 function createEvent(event) {
   let start = new Date(event.start.dateTime || event.start.date);
-  let end = new Date(event.end.dateTime || event.start.date);
+  let end = new Date(event.end.dateTime || event.end.date);
   let { lecturers, links } = parseDesc(event);
 
   return {
