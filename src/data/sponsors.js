@@ -31,4 +31,11 @@ export const sponsors = [
     invert: true,
     size: 100,
   },
+  {
+    name: "Render",
+    img: "render.svg",
+    href: "render.com",
+    invert: true,
+    size: 100,
+  },
 ];
