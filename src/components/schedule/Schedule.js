@@ -8,12 +8,7 @@ function inferType(event) {
   const desc = event?.description;
   if (title.includes("lunch") || (desc !== undefined && desc.includes("lunch")))
     return "lunch";
-  if (
-    title.includes("milestone") ||
-    (desc !== undefined && (desc.includes("milestone") || desc.includes("hw")))
-  )
-    // remove includes milestone after we update everything
-    return "hw";
+  if (title.includes("milestone") || title.includes("hw")) return "hw";
   if (
     title.includes("office hours") ||
     (desc !== undefined && desc.includes("office hours"))
@@ -37,7 +32,6 @@ function parseDesc(event) {
       links = metadata[2].split(",");
     }
   }
-
   return { lecturers, links };
 }
 
