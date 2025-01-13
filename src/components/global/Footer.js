@@ -136,48 +136,6 @@ export default function Footer() {
           </Link>
         </span>
       </div>
-      {/* <div className="flex w-full max-w-7xl items-start justify-between">
-        <div className="flex w-fit flex-col gap-4">
-          <Link
-            href="/"
-            draggable="false"
-            className="flex w-fit items-center gap-2 text-lg font-semibold lg:gap-3 lg:text-3xl"
-          >
-            <Image
-              className="h-auto w-8 select-none lg:w-8"
-              draggable="false"
-              src={logo}
-              alt="web.lab Logo"
-            />
-            {"{web.lab}"}
-          </Link>
-          <span className="w-fit whitespace-nowrap font-inter font-medium tracking-tighter text-neutral-400">
-            learn web dev. win cash prizes. all in 4 weeks.
-          </span>
-          <span className="w-fit whitespace-nowrap font-inter font-medium tracking-tighter text-neutral-600">
-            
-          </span>
-        </div>
-        <div className="flex h-full flex-col items-center justify-between">
-          <ul className="grid h-fit w-fit grid-cols-2 gap-3 text-sm font-medium tracking-tight text-neutral-500 lg:gap-6 lg:text-base">
-            {footerLinks.map((link, i) => (
-              <li
-                className="w-fit duration-300 ease-in-out hover:text-white"
-                key={i}
-              >
-                <Link href={link.href}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
-          <Link
-            href="https://szhao.dev/"
-            target="_blank"
-            className="w-fit cursor-cool whitespace-nowrap font-inter font-medium tracking-tighter text-neutral-600 transition duration-300 ease-in-out hover:text-neutral-400"
-          >
-            built by sz with <span className="animate-pulse">❤️</span>
-          </Link>
-        </div>
-      </div> */}
     </footer>
   );
 }

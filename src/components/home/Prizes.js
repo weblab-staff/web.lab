@@ -92,7 +92,7 @@ const prizes = [
 
 const specialPrizes = [
   {
-    place: "honorable mention (3x)",
+    place: "honorable mention",
     value: 500,
     color: "from-[#343a40] via-[#212529] to-[#495057]",
   },
