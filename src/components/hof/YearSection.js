@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import placeholder from "../../../public/img/logo.svg";
 import { Fragment } from "react";
 
 export default function YearSection({ yearData }) {
@@ -27,18 +25,14 @@ export default function YearSection({ yearData }) {
                 href={`https://${project.href}`}
                 style={{ maxWidth: "600px" }}
               >
-                <div className="relative aspect-video h-auto w-full overflow-hidden rounded-md border border-neutral-700">
-                  <Image
-                    className={`${
-                      project.img ? "object-cover" : "object-contain"
-                    } object-center transition duration-300 ease-in-out`}
-                    fill
-                    src={project.img ? project.img : placeholder}
-                    sizes="33vw"
-                    quality={50}
-                    alt={`web.lab | ${project.project}`}
-                  />
-                </div>
+                <img
+                  className={`${
+                    project.img ? "object-cover" : "object-contain"
+                  } relative aspect-video h-auto w-full overflow-hidden rounded-md border border-neutral-700 object-center transition duration-300 ease-in-out`}
+                  src={project.img ? project.img : "img/logo.svg"}
+                  alt={`web.lab | ${project.project}`}
+                />
+
                 <div className="relative flex w-full flex-col gap-2">
                   <div>
                     <h2 className="text-lg font-semibold tracking-tighter text-white lg:text-xl 2xl:text-2xl">
