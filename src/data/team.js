@@ -225,7 +225,7 @@ export const team = {
       firstName: "akshaj",
       lastName: "kadaveru",
       year: "2022",
-      img: "akshaj.jpeg",
+      img: "akshaj.jpg",
     },
     {
       firstName: "albert",
