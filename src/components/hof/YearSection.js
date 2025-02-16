@@ -6,7 +6,7 @@ const placeToName = (place) => {
     case "hm":
       return "Honorable Mention";
     case "sf":
-      return "Special Honorable Mention";
+      return "Semifinalist";
     case "1":
       return "1st Place";
     case "2":
