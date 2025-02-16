@@ -1,6 +1,23 @@
 import Link from "next/link";
 import { Fragment } from "react";
 
+const placeToName = (place) => {
+  switch (place) {
+    case "hm":
+      return "Honorable Mention";
+    case "sf":
+      return "Special Honorable Mention";
+    case "1":
+      return "1st Place";
+    case "2":
+      return "2nd Place";
+    case "3":
+      return "3rd Place";
+    case "4":
+      return "4th Place";
+  }
+};
+
 export default function YearSection({ yearData }) {
   return (
     <section className="flex w-full flex-col items-start gap-4">
@@ -21,8 +38,13 @@ export default function YearSection({ yearData }) {
                   placeColor[`${project.place}`]
                 } cursor-eyes bg-gradient-to-br p-4 backdrop-blur transition duration-300 ease-in-out hover:-translate-y-1 hover:brightness-125`}
                 key={i}
+                title={`web.lab ${yearData.year} ${placeToName(project.place)}: ${project.name}`}
                 target="_blank"
-                href={`https://${project.href}`}
+                href={
+                  project.href.startsWith("http")
+                    ? project.href
+                    : `https://${project.href}`
+                }
                 style={{ maxWidth: "600px" }}
               >
                 <img
@@ -30,7 +52,7 @@ export default function YearSection({ yearData }) {
                     project.img ? "object-cover" : "object-contain"
                   } relative aspect-video h-auto w-full overflow-hidden rounded-md border border-neutral-700 object-center transition duration-300 ease-in-out`}
                   src={project.img ? project.img : "img/logo.svg"}
-                  alt={`web.lab | ${project.project}`}
+                  alt={`web.lab ${yearData.year} ${placeToName(project.place)}: ${project.name}`}
                 />
 
                 <div className="relative flex w-full flex-col gap-2">
@@ -61,6 +83,6 @@ const placeColor = {
   2: "from-[#B4B9BE]/60 via-[#716F71]/60 to-[#A8A9AD]/60",
   3: "from-[#A97142]/60 via-[#6E3A06]/60 to-[#B08D57]/60",
   4: "from-[#DC826B]/60 via-[#CB6A52]/60 to-[#FFE4BB]/60",
-  hm: "from-[#343a40]/60 via-[#212529]/60 to-[#495057]/60",
+  hm: "from-[#0f0c29]/60 via-[#302b63]/60 to-[#24243e]/60",
   sf: "from-[#343a40]/60 via-[#212529]/60 to-[#495057]/60",
 };
