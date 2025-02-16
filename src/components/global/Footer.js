@@ -1,6 +1,7 @@
 import logo from "../../../public/img/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useMemo } from "react";
 
 const socials = [
   {
@@ -85,7 +86,35 @@ const socials = [
   },
 ];
 
+const footerTexts = [
+  {
+    text: "crafted by sz with ❤️",
+    weight: 2,
+  },
+  {
+    text: "crafted by sz with react.js 🩵",
+    weight: 1,
+  },
+  {
+    text: "crafted by sz with next.js 🖤",
+    weight: 1,
+  },
+];
+
 export default function Footer() {
+  const randomFooterText = useMemo(() => {
+    const totalWeight = footerTexts.reduce(
+      (sum, { weight }) => sum + weight,
+      0,
+    );
+    const randomNum = Math.random() * totalWeight;
+    let cumulativeWeight = 0;
+
+    return footerTexts.find(({ weight }) => {
+      cumulativeWeight += weight;
+      return randomNum < cumulativeWeight;
+    });
+  }, []);
   return (
     <footer className="flex w-full flex-col items-center gap-6 border-t border-neutral-900/50 px-6 py-12 backdrop-blur-sm">
       <div className="flex w-full max-w-7xl flex-col items-center gap-4">
@@ -130,9 +159,9 @@ export default function Footer() {
           <Link
             href="https://www.stanleyzhao.com/"
             target="_blank"
-            className="inline w-fit cursor-eyes font-normal text-neutral-700 transition duration-300 ease-in-out hover:text-neutral-400 [&>span]:hover:grayscale-0"
+            className="inline w-fit cursor-eyes font-normal text-white transition duration-300 ease-in-out hover:underline"
           >
-            built by sz with <span className="animate-pulse grayscale">❤️</span>
+            {randomFooterText.text}
           </Link>
         </span>
       </div>
