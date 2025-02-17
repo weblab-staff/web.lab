@@ -17,7 +17,7 @@ export const team = {
       github: "zhao-stanley",
       website: "https://stanleyzhao.com/",
       email: "stanleyz@mit.edu",
-      easterEgg: "video_mp4",
+      easterEgg: "video",
     },
     {
       firstName: "abby",

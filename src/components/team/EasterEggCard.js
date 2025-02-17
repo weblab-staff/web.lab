@@ -4,12 +4,10 @@ import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 
 const VALID_IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "gif", "webp"];
-const VALID_VIDEO_EXTENSIONS = ["mp4", "webm"];
 
 export function VideoSwap({ member, currentTeam }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
-  const extension = member.easterEgg.split("_")[1];
 
   useEffect(() => {
     const video = videoRef.current;
@@ -49,9 +47,12 @@ export function VideoSwap({ member, currentTeam }) {
             isPlaying ? "opacity-100" : "opacity-0"
           } absolute inset-0 z-10 h-full w-full object-cover object-center transition duration-300 ease-in-out`}
           playsInline
+          preload="none"
           ref={videoRef}
-          src={`/eastereggs/video/${member.firstName}.${extension}`}
-          alt={`web.lab staff ${member.firstName} ${member.lastName}`}
+          webkit-playsinline="true"
+          type={`video/mp4`}
+          src={`/eastereggs/video/${member.firstName}.mp4`}
+          title={`web.lab staff ${member.firstName} ${member.lastName}`}
         />
         <img
           className={`object-cover object-center grayscale transition duration-300 ease-in-out ${
@@ -583,13 +584,7 @@ export default function EasterEggCard({ member, currentTeam }) {
     return VALID_IMAGE_EXTENSIONS.includes(extension);
   };
 
-  const isValidVideoEasterEgg = (easterEgg) => {
-    const extension = easterEgg.split("_")[1]?.toLowerCase();
-    return VALID_VIDEO_EXTENSIONS.includes(extension);
-  };
-
-  return member.easterEgg.startsWith("video_") &&
-    isValidVideoEasterEgg(member.easterEgg) ? (
+  return member.easterEgg === "video" ? (
     <VideoSwap member={member} currentTeam={currentTeam} />
   ) : member.easterEgg.startsWith("overlay_") &&
     isValidImageEasterEgg(member.easterEgg) ? (
