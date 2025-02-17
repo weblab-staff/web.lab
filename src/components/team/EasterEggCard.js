@@ -148,7 +148,7 @@ export function ImageOverlay({ member, currentTeam }) {
   const extension = member.easterEgg.split("_")[1];
   return (
     <li
-      className={`flex h-full w-full origin-center flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 transition-transform duration-300 ease-in-out hover:-translate-y-1 [&>img]:hover:grayscale-0`}
+      className={`flex h-full w-full origin-center flex-col gap-y-2 rounded-2xl border border-neutral-700 bg-transparent p-4 backdrop-blur backdrop-brightness-75 transition-transform duration-300 ease-in-out hover:-translate-y-1 [&>div>img]:hover:grayscale-0`}
       style={{ maxWidth: "600px" }}
     >
       <div
