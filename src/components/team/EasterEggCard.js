@@ -49,6 +49,7 @@ export function VideoSwap({ member, currentTeam }) {
             isPlaying ? "opacity-100" : "opacity-0"
           } absolute inset-0 z-10 h-full w-full object-cover object-center transition duration-300 ease-in-out`}
           playsInline
+          preload="none"
           ref={videoRef}
           src={`/eastereggs/video/${member.firstName}.${extension}`}
           alt={`web.lab staff ${member.firstName} ${member.lastName}`}
@@ -156,6 +157,7 @@ export function ImageOverlay({ member, currentTeam }) {
         className="relative aspect-square h-auto w-full overflow-hidden rounded-md border border-neutral-700"
       >
         <img
+          loading="lazy"
           className={`${
             isHovered ? "opacity-100" : "opacity-0"
           } absolute inset-0 z-10 h-full w-full object-cover object-center transition duration-300 ease-in-out`}
@@ -261,6 +263,7 @@ export function ImageSwap({ member, currentTeam }) {
       style={{ maxWidth: "600px" }}
     >
       <img
+        loading="lazy"
         className={`relative aspect-square h-auto w-full overflow-hidden rounded-md border border-neutral-700 object-cover object-center grayscale transition duration-300 ease-in-out ${
           isHovered ? "grayscale-0" : ""
         }`}
@@ -371,7 +374,11 @@ export function SoundCard({ member, currentTeam }) {
       }`}
       style={{ maxWidth: "600px" }}
     >
-      <audio ref={audioRef} src={`/eastereggs/audio/${member.firstName}.mp3`} />
+      <audio
+        preload="none"
+        ref={audioRef}
+        src={`/eastereggs/audio/${member.firstName}.mp3`}
+      />
       <div className="relative overflow-hidden rounded-md border border-neutral-700 [&>button]:hover:opacity-100">
         <button
           className={
