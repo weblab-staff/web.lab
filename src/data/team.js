@@ -46,6 +46,7 @@ export const team = {
       github: "evnkim",
       email: "evnkim@mit.edu",
       website: "https://evn.kim/",
+      easterEgg: "swap_gif",
     },
     {
       firstName: "daniel",
