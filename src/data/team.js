@@ -7,6 +7,7 @@ export const team = {
       img: "andy_jiang.png",
       github: "acyjiang",
       email: "acyjiang@mit.edu",
+      easterEgg: "overlay_gif",
     },
     {
       firstName: "stanley",
@@ -16,6 +17,7 @@ export const team = {
       github: "zhao-stanley",
       website: "https://stanleyzhao.com/",
       email: "stanleyz@mit.edu",
+      easterEgg: "overlay_gif",
     },
     {
       firstName: "abby",
@@ -34,6 +36,7 @@ export const team = {
       lastName: "bautista",
       position: "operations chair",
       img: "lucas.jpg",
+      easterEgg: "sound",
     },
     {
       firstName: "evan",
@@ -49,6 +52,7 @@ export const team = {
       lastName: "hong",
       position: "tech chair",
       img: "daniel.jpg",
+      easterEgg: "swap_png",
     },
     {
       firstName: "david",
@@ -68,6 +72,7 @@ export const team = {
       position: "historian",
       img: "samvitdas.jpg",
       email: "samvitd@mit.edu",
+      easterEgg: "sound",
     },
     {
       firstName: "kenneth",
@@ -76,6 +81,7 @@ export const team = {
       img: "kenny.jpg",
       github: "kenctrl",
       email: "kenchoi@mit.edu",
+      easterEgg: "sound",
     },
     {
       firstName: "nicholas",
@@ -105,6 +111,7 @@ export const team = {
       github: "azliu0",
       website: "https://azliu.cc/",
       email: "azliu@mit.edu",
+      easterEgg: "spin",
     },
     {
       firstName: "jay",
@@ -166,6 +173,7 @@ export const team = {
       lastName: "liu",
       year: "2023",
       img: "philena.jpg",
+      easterEgg: "spin",
     },
     {
       firstName: "leo",
@@ -178,6 +186,7 @@ export const team = {
       lastName: "zhou huang",
       year: "2023",
       img: "qiong.jpg",
+      easterEgg: "spin",
     },
     {
       firstName: "william",
@@ -196,6 +205,7 @@ export const team = {
       lastName: "walker",
       year: "2023",
       img: "dylan.jpg",
+      easterEgg: "spin",
     },
     {
       firstName: "edward",
@@ -376,6 +386,7 @@ export const team = {
       lastName: "kim",
       year: "2018",
       img: "slava.png",
+      easterEgg: "spin",
     },
     {
       firstName: "budmonde",

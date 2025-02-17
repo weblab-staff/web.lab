@@ -11,6 +11,7 @@ export default function Team() {
             section={team.current}
             sectionTitle={"this year's staff"}
             currentTeam={true}
+            enableEasterEggs={true}
           />
           <TeamSection
             section={team.alums}

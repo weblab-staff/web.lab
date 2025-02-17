@@ -21,6 +21,15 @@ module.exports = {
         starstruck: "url('/img/cursors/starstruck.png') 0 0, auto",
         eyes: "url('/img/cursors/eyes.png') 0 0, auto",
       },
+      animation: {
+        bounce: "bounce 0.25s infinite",
+      },
+      keyframes: {
+        bounce: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
