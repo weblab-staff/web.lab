@@ -102,19 +102,15 @@ const footerTexts = [
 ];
 
 export default function Footer() {
-  const randomFooterText = useMemo(() => {
-    const totalWeight = footerTexts.reduce(
-      (sum, { weight }) => sum + weight,
-      0,
-    );
-    const randomNum = Math.random() * totalWeight;
-    let cumulativeWeight = 0;
+  const totalWeight = footerTexts.reduce((sum, { weight }) => sum + weight, 0);
+  const randomNum = Math.random() * totalWeight;
+  let cumulativeWeight = 0;
 
-    return footerTexts.find(({ weight }) => {
-      cumulativeWeight += weight;
-      return randomNum < cumulativeWeight;
-    });
-  }, []);
+  const randomFooterText = footerTexts.find(({ weight }) => {
+    cumulativeWeight += weight;
+    return randomNum < cumulativeWeight;
+  });
+
   return (
     <footer className="flex w-full flex-col items-center gap-6 border-t border-neutral-900/50 px-6 py-12 backdrop-blur-sm">
       <div className="flex w-full max-w-7xl flex-col items-center gap-4">
