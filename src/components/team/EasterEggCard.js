@@ -49,7 +49,6 @@ export function VideoSwap({ member, currentTeam }) {
             isPlaying ? "opacity-100" : "opacity-0"
           } absolute inset-0 z-10 h-full w-full object-cover object-center transition duration-300 ease-in-out`}
           playsInline
-          preload="none"
           ref={videoRef}
           src={`/eastereggs/video/${member.firstName}.${extension}`}
           alt={`web.lab staff ${member.firstName} ${member.lastName}`}
