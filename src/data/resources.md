@@ -24,14 +24,14 @@
 
 - Before web.lab starts on Monday:
   - Set up git and vscode: [weblab.is/hw0](https://weblab.is/hw0)
-- Due EOD Monday 1/6:
+- Due EOD Monday 1/5:
   - 🏋️‍♀️ If you're new to programming, you can practice basic JavaScript on [JS Challenger](https://www.jschallenger.com/javascript-practice).
   - 🟢 Set up node.js: [weblab.is/hw0](https://weblab.is/hw0)
-- Due EOD Wednesday 1/8:
+- Due EOD Wednesday 1/7:
   - 🪧 Milestone 0: forming a team and submitting 10 ideas [weblab.is/milestone0](https://weblab.is/milestone0)
   - 💾 Set up MongoDB: [weblab.is/hw0](https://weblab.is/hw0)
   - 📝 HW1: React Checklist (fully optional, you can do it whenever you want): [weblab.is/hw1](https://weblab.is/hw1)
-- Due Saturday/Sunday 1/11-12:
+- Due Saturday/Sunday 1/10-11:
   - 🪧 Milestone 1: project pitches! Sign up for a timeslot at [weblab.is/milestone1](https://weblab.is/milestone1)
     - More info at [weblab.is/rules](https://weblab.is/rules)
 
@@ -41,14 +41,14 @@
 
 #### Week 3
 
-- Due Wednesday 1/22 **at 6 PM**:
+- Due Wednesday 1/21 **at 6 PM**:
   - 🪧 Milestone 2 (Website MVP): [weblab.is/milestone2](https://weblab.is/milestone2)
 
 #### Week 4
 
-- Due Wednesday 1/29 **at NOON**:
+- Due Wednesday 1/28 **at NOON**:
   - 🏆 Final website submission for competing teams
-- Due Thursday 1/30 **at 11:59 PM**:
+- Due Thursday 1/29 **at 11:59 PM**:
   - 👍 Final website submission for non-competing (credit-only) teams
 
 ## Github

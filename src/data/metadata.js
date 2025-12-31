@@ -8,6 +8,6 @@ export const metadata = {
   studentPortal: "https://portal.weblab.is/",
   heroBlurb: "registration is now open!",
   heroBlurbLink: "https://portal.weblab.is/",
-  email: "weblab-staff.mit.edu",
+  email: "weblab-staff@mit.edu",
   hideCalendar: false, // simple utility to hide calendar on frontend
 };

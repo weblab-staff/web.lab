@@ -18,7 +18,7 @@ export default function Team() {
               <Link
                 className="cursor-eyes text-blue-500 underline transition ease-linear hover:text-blue-600"
                 target="_blank"
-                href="/competition_info_2025.pdf"
+                href="/competition_info_2026.pdf"
               >
                 here
               </Link>

@@ -70,22 +70,22 @@ export default function Prizes() {
 const prizes = [
   {
     place: "1",
-    value: 5000,
+    value: 4000,
     color: "from-[#C5AB50] via-[#AC933E] to-[#FBF8AE]",
   },
   {
     place: "2",
-    value: 3500,
+    value: 3000,
     color: "from-[#B4B9BE] via-[#716F71] to-[#A8A9AD]",
   },
   {
     place: "3",
-    value: 2250,
+    value: 2000,
     color: "from-[#A97142] via-[#6E3A06] to-[#B08D57]",
   },
   {
     place: "4",
-    value: 1500,
+    value: 1000,
     color: "from-[#DC826B] via-[#CB6A52] to-[#FFE4BB]",
   },
 ];

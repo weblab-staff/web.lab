@@ -53,7 +53,7 @@ function createEvent(event) {
 
 async function getEvents() {
   const data = await fetch(
-    "https://www.googleapis.com/calendar/v3/calendars/cc1fa1082653a6746650dce3a7403bfcdd6c898294210579915103e4c450d3e2@group.calendar.google.com/events?key=AIzaSyBWw7tnK1X91Fuv67TqYtc_fRCIo8FWW4Y",
+    "https://www.googleapis.com/calendar/v3/calendars/898f5b0dab5158f2d0a30d8ed1a69e61e9736f31cecfee30b5dee874e9e4104e@group.calendar.google.com/events?key=AIzaSyBQAsKFd0afKuBi4RVppZu9ij7FbxkH_VY",
   );
   const json = await data.json();
   const filteredEvents = json.items.filter((event) => {
