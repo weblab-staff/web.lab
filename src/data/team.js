@@ -44,7 +44,7 @@ export const team = {
     {
       firstName: "raymond",
       lastName: "zhang",
-      img: "placeholder1.png",
+      img: "raymond.jpg",
       position: "operations chair",
     },
     {
