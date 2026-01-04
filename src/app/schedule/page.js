@@ -2,6 +2,7 @@ export const revalidate = 0;
 
 import Rays from "@/components/global/Rays";
 import Schedule from "@/components/schedule/Schedule";
+import Link from "next/link";
 
 export default function SchedulePage() {
   return (
@@ -15,6 +16,10 @@ export default function SchedulePage() {
             <p className="whitespace-pre-wrap text-base tracking-tighter text-neutral-300 lg:text-lg 2xl:text-xl">
               for lectures, workshops, deadlines, and more
             </p>
+            <Link className="z-[1] whitespace-pre-wrap text-base tracking-tighter text-blue-500 underline transition ease-linear hover:text-blue-600 lg:text-lg 2xl:text-xl"
+                href="https://weblab.is/calendar" target="_blank">
+              add to google calendar
+            </Link>
           </section>
           <Schedule />
         </Rays>
