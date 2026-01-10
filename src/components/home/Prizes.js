@@ -49,7 +49,7 @@ export default function Prizes() {
                 {prize.place}
               </p>
               <p className="z-[1] text-2xl font-semibold text-neutral-200 antialiased transition duration-300 ease-in-out lg:text-3xl 2xl:text-4xl">
-                ${prize.value.toLocaleString("en-us")}
+                ${prize.value}
               </p>
             </li>
           ))}
@@ -120,5 +120,10 @@ const specialPrizes = [
     place: "people's choice award",
     value: 250,
     color: "from-[#065a60] via-[#0b525b] to-[#006466]",
+  },
+  {
+    place: "best social impact",
+    value: "100/member",
+    color: "from-[#de7a3f] via-[#f3a25f] to-[#dfc7b0]",
   },
 ];
