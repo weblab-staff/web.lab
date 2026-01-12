@@ -3,7 +3,7 @@ export const sponsors = [
     name: "Akamai",
     img: "akamai.svg",
     href: "akamai.com",
-    size: 150,
+    size: 200,
   },
   // {
   //   name: "fetch.ai",
@@ -29,20 +29,20 @@ export const sponsors = [
     img: "delve.svg",
     href: "delve.co",
     invert: true,
-    size: 150,
+    size: 350,
   },
   {
     name: "Enhearten",
     img: "enhearten.svg",
     href: "enhearten.com",
     invert: true,
-    size: 200,
+    size: 250,
   },
-  {
-    name: "Render",
-    img: "render.svg",
-    href: "render.com",
-    invert: true,
-    size: 150,
-  },
+  // {
+  //   name: "Render",
+  //   img: "render.svg",
+  //   href: "render.com",
+  //   invert: true,
+  //   size: 150,
+  // },
 ];

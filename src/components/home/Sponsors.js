@@ -31,7 +31,7 @@ export default async function Sponsors() {
                 title={sponsor.name}
                 draggable="false"
                 width={sponsor?.size}
-                height={50}
+                height={sponsor?.size}
               />
             </Link>
           );
