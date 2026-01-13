@@ -3,7 +3,7 @@ export const sponsors = [
     name: "Akamai",
     img: "akamai.svg",
     href: "akamai.com",
-    size: 200,
+    size: 175,
   },
   // {
   //   name: "fetch.ai",
@@ -32,11 +32,18 @@ export const sponsors = [
     size: 350,
   },
   {
+    name: "HackMIT",
+    img: "hackmit.svg",
+    href: "hackmit.org",
+    invert: true,
+    size: 200,
+  },
+  {
     name: "Enhearten",
     img: "enhearten.svg",
     href: "enhearten.com",
     invert: true,
-    size: 250,
+    size: 200,
   },
   // {
   //   name: "Render",
